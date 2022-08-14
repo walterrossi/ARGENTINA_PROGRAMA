@@ -16,6 +16,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { NavbarComponent } from './navbar/navbar.component';
+import { EncabezadoComponent } from './encabezado/encabezado.component';
 
 const firebaseConfig = {
   apiKey: "AIzaSyBtnbZDOPXPJ2zJOWlVc1Zi39IN4gNFQlE",
@@ -40,6 +41,7 @@ const firebaseConfig = {
     IniciarSesionComponent,
     PortfolioComponent,
     NavbarComponent,
+    EncabezadoComponent,
    
     
     ],

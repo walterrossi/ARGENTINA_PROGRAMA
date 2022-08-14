@@ -17,25 +17,33 @@ export class IniciarSesionComponent{
   usuario = {
   email:'',
   password:''
+
+///agregue esto///
+
+///
+
+
+
+
  }
   constructor(private authService:AuthService, private router: Router) {
 
   }
 
-  Ingresar(){  console.log(this.usuario); 
+  Ingresar(){ 
+
+
+    console.log(this.usuario); 
     const {email,password} = this.usuario;
     this.authService.login(email,password).then(res=> {
       console.log("Se logueo: ",res);
     })
  
-      // le agregue esto///
-       
-   
+      
 
    
   }
        
-      ////////hasta aca///////
 
    
    
@@ -59,16 +67,7 @@ signOut(auth).then(() => {
 
 
 
- // Logout() { console.log("Saliendo..");
-  //const auth = getAuth();
-  //  return this.auth.signOut().then(() => {
-    //  localStorage.removeItem('my-test-app-currentUser');
-      //window.alert('You have been signed-out');
-   // });
 
-  
-
-  //}
   
 
   
