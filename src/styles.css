@@ -1,0 +1,152 @@
+body {
+         background-color: black;  
+		}
+
+
+
+.destacado {color:rgb(21, 255, 0)}
+.logo_argentina_programa{padding: 5px; margin-top: 0px; float: left; width: 150px; }
+.icono_login { padding: 10px; margin: 10px; float: right; width: 70px; height: auto; }
+.icono_facebook { padding: 10px; margin: 10px; float: right; width: 70px; height: auto;}
+.icono_instagram { padding: 10px; margin: 10px; float: right; width: 70px;height: auto; }
+.icono_whatsapp { padding: 10px; margin: 10px; float: right; width: 70px; height: auto; }
+.icono_play {padding: 10px; margin: 10px; float: right; width: 70px; height: auto;}
+
+.fondoWeb{ 
+	width: auto;
+    height: auto;
+	margin-top: 20px;
+	margin-left: 2%;
+	
+    }
+
+.logoArgentinaPrograma{vertical-align: middle; float: left; width: 150px;  }
+
+
+
+.rounded-circle{ 
+	height: auto;
+	width:200px;
+	margin-top: -20%;
+	padding-left: 30px;
+	border-radius: 100%;
+    
+}
+.acerca{
+	font-size:20px;
+	font-style: italic;
+	font-family: sans-serif;
+	color: rgb(255, 255, 255);
+	text-align: right;
+}
+
+.experiencia{
+	color:white; 
+	font-size:15px;
+	font-style: italic;
+	font-family: sans-serif;
+	text-align: right;
+}
+	
+.lineas{
+	color: rgb(233, 231, 231);
+	line-height: 20px;
+}
+
+.copitec{
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+}
+.cassa{
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+}
+
+.educacion{
+	color:white; 
+	font-size:15px;
+	font-style: italic;
+	font-family: sans-serif;
+	text-align: right;
+}
+.universidad{
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+}
+
+.escuela{height: 50px;
+	width: 50px;
+	border-radius: 100%;}
+
+	.progress-bar {  
+		background-color: #1a1a1a;
+		height: 25px;
+		padding: 5px;
+		width: 350px;
+		margin: 50px 0;
+		border-radius: 5px;
+		box-shadow: 0 1px 5px #000 inset, 0 1px 0 #444;
+	  }
+	
+	  .progress-bar span {
+		display: inline-block;
+		height: 100%;
+		border-radius: 3px;
+		box-shadow: 0 1px 0 rgba(255, 255, 255, .5) inset;
+		transition: width .4s ease-in-out;
+	  }
+
+	  .blue span {
+		background-color: #34c2e3;
+	  }
+	
+	  .orange span {
+		background-color: #fecf23;
+		background-image: linear-gradient(top, #fecf23, #fd9215);
+	  }
+	
+	  .green span {
+		background-color: #a5df41;
+		background-image: linear-gradient(top, #a5df41, #4ca916);
+	  }
+
+	  .skills{
+		color:white; 
+		font-size:15px;
+		font-style: italic;
+		font-family: sans-serif;
+		text-align: right;
+	}
+
+	.text1{
+		text-align: left;
+		font-size: small;
+		color: antiquewhite;
+	}
+
+	.icono_editar{
+		height: 20px;
+		width: 20px;
+		border-radius: 100%;
+		margin-right: auto;
+		float: right;
+	}
+	.icono_eliminar{
+		height: 20px;
+		width: 20px;
+		border-radius: 100%;	
+	    margin-right: auto;
+		float: right;
+		
+	}
+	.nombrePostulante{
+		font-size: x-large;
+		color: aliceblue;
+        padding-left: 40px;
+		font-style: italic;
+		
+
+	}
