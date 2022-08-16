@@ -11,7 +11,30 @@ import { EducacionComponent } from './educacion/educacion.component';
 import { HardComponent } from './hard/hard.component';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
+import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire/compat';
+import { NavbarComponent } from './navbar/navbar.component';
+import { EncabezadoComponent } from './encabezado/encabezado.component';
 
+import { ModalEducacionComponent } from './modal-educacion/modal-educacion.component';
+import { ModalExperienciaComponent } from './modal-experiencia/modal-experiencia.component';
+import { ModalAcercaComponent } from './modal-acerca/modal-acerca.component';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBtnbZDOPXPJ2zJOWlVc1Zi39IN4gNFQlE",
+  authDomain: "loginportfolio-773a2.firebaseapp.com",
+  projectId: "loginportfolio-773a2",
+  storageBucket: "loginportfolio-773a2.appspot.com",
+  messagingSenderId: "29345609883",
+  appId: "1:29345609883:web:b3ef66a0c5d1c475a72e3e",
+  measurementId: "G-K3Q8G22JH1"
+};
 
 @NgModule({
   declarations: [
@@ -23,12 +46,26 @@ import { HomeComponent } from './home/home.component';
     EducacionComponent,
     HardComponent,
     HomeComponent,
+    IniciarSesionComponent,
+    PortfolioComponent,
+    NavbarComponent,
+    EncabezadoComponent,
+ 
+    ModalEducacionComponent,
+    ModalExperienciaComponent,
+    ModalAcercaComponent,
+   
     
     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    BrowserAnimationsModule,
+    
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]

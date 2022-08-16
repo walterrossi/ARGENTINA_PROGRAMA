@@ -1,14 +1,19 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
+import { IniciarSesionComponent } from './iniciar-sesion/iniciar-sesion.component';
+import { ModalAcercaComponent } from './modal-acerca/modal-acerca.component';
+
+ 
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 const routes: Routes = [
-  { path: "home", component: HomeComponent },
-  { path: "appcomponent", component: AppComponent },
-  { path: "login", component: LoginComponent },
- // { path: "**", redirectTo: "home" }
+  { path: "portfolio", component: PortfolioComponent },
+  { path: "iniciar-sesion", component: IniciarSesionComponent },
+  { path: "home", component:HomeComponent},
+  { path: "modal-acerca", component:ModalAcercaComponent},
+  //{ path:'',redirectTo: "iniciar-sesion", pathMatch:'full'}
+ 
 ];
 
 @NgModule({
