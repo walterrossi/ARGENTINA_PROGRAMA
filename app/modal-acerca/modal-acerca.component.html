@@ -2,8 +2,13 @@
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Editar Acerca de..
   </button>
+
+
   
   <!-- Modal -->
+<div class="container">
+<form [formGroup]="acercaForm" (ngSubmit)="putForm(acercaForm.value)">
+  <div class="formGroup">
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -13,14 +18,29 @@
         </div>
         <div class="modal-body">
           
-            <label for="exampleFormControlTextarea1" class="form-label">Edite Acerca de..</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <label for="exampleFormControlTextarea1" class="form-label">Acerca de:</label>
+          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" formControlName="acerca">
+         
+          <label for="exampleFormControlTextarea1" class="form-label">Educacion:</label>
+          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" formControlName="educacion">
+
+          <label for="exampleFormControlTextarea1" class="form-label">Experiencia:</label>
+          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" formControlName="experiencia">
+
+          <label for="exampleFormControlTextarea1" class="form-label">HardSoft:</label>
+          <input type="text" class="form-control" id="exampleFormControlTextarea1" rows="3" formControlName="hardsoft">
 
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-          <button type="button" class="btn btn-primary"   >Guardar Cambios</button>
+        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+     
         </div>
       </div>
     </div>
   </div>
+</div>
+</form> 
+</div>
+
+  

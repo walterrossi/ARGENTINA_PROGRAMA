@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { Compo1Component } from './compo1/compo1.component';
@@ -17,12 +16,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { NavbarComponent } from './navbar/navbar.component';
 import { EncabezadoComponent } from './encabezado/encabezado.component';
-
 import { ModalEducacionComponent } from './modal-educacion/modal-educacion.component';
 import { ModalExperienciaComponent } from './modal-experiencia/modal-experiencia.component';
 import { ModalAcercaComponent } from './modal-acerca/modal-acerca.component';
-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SkillsComponent } from './skills/skills.component';
+
 
 
 
@@ -54,7 +53,9 @@ const firebaseConfig = {
     ModalEducacionComponent,
     ModalExperienciaComponent,
     ModalAcercaComponent,
-   
+    SkillsComponent,
+ 
+
     
     ],
   imports: [
@@ -64,7 +65,6 @@ const firebaseConfig = {
     ReactiveFormsModule,
     FormsModule,
     BrowserAnimationsModule,
-    
     AngularFireModule.initializeApp(firebaseConfig)
   ],
   providers: [],

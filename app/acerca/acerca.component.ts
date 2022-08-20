@@ -14,7 +14,7 @@ persona: persona=new persona("","","","");  /*aca van los campos para leer db my
   constructor(public personaService: PersonaService) { }
 
   ngOnInit(): void {
-    this.personaService.getPersona().subscribe(data=> (this.persona=data))
+    this.personaService.getPersona().subscribe(data=> (this.persona=data))  //aca pone esto para poder levantarlo en el componente
   }
 
 }
